@@ -742,6 +742,13 @@ def print_LAB2_preamble():
 
 ### MAIN PROGRAM FOR LAB-2 ###
 
+# dhmiourgia file tree
+if not os.path.exists(os.getcwd()+"\\Experiments"):
+    os.mkdir(os.getcwd()+"\\Experiments")
+    for i in range(1,5):
+        os.mkdir(os.getcwd()+"\\Experiments\\P"+str(i))
+
+
 LINELENGTH  = 80
 EQLINE      = drawLine(LINELENGTH,'=')
 MINUSLINE   = drawLine(LINELENGTH,'-')
